@@ -1,0 +1,50 @@
+/* Sakura Animation */
+.sakura-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 10;
+    /* Sitting appropriately in background */
+    overflow: hidden;
+}
+
+.sakura {
+    position: absolute;
+    background: #ffd7e6;
+    /* Sakura pink */
+    border-radius: 100% 0 100% 0;
+    /* Petal shape */
+    opacity: 0.8;
+    transform-origin: center center;
+    box-shadow: 0 0 10px rgba(255, 183, 178, 0.5);
+    /* Soft glow */
+}
+
+@keyframes fall {
+    0% {
+        top: -10%;
+        transform: translateX(0) rotate(0deg);
+    }
+
+    100% {
+        top: 110%;
+        transform: translateX(100px) rotate(360deg);
+    }
+}
+
+@keyframes sway {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateX(50px) rotate(180deg);
+    }
+
+    100% {
+        transform: translateX(0) rotate(360deg);
+    }
+}

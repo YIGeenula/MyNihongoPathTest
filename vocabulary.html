@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VTJR4ZW26"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-9VTJR4ZW26');
+    </script>
+
+    <!-- Basic Meta -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Vocabulary Drills – My Nihongo Path</title>
+
+    <meta name="description"
+        content="Master Japanese vocabulary with interactive word drills. Categorized Hiragana and Katakana practice sets for all levels." />
+    <meta name="keywords"
+        content="Japanese vocabulary, Hiragana words, Katakana words, Japanese practice, learn Japanese vocabulary, My Nihongo Path" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Yasiru Isum Geenula" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://mynihongopath.online/vocabulary.html" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/siteIcoRed.png" />
+
+    <!-- Tailwind & Fonts -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+Sinhala:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#EE2B3B",
+                        secondary: "#1A1A1A",
+                        "bg-light": "#FAFAFA",
+                    },
+                },
+            },
+        };
+    </script>
+
+    <style>
+        body {
+            font-family: 'Lexend', sans-serif;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+        }
+
+        .word-card {
+            background: white;
+            border: 1px solid #f3f4f6;
+            border-radius: 1.5rem;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .word-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px -10px rgb(0 0 0 / 0.1);
+            border-color: #e5e7eb;
+        }
+
+        .filter-btn {
+            padding: 0.6rem 1.25rem;
+            border-radius: 1rem;
+            font-weight: 700;
+            transition: all 0.2s;
+            border: 1px solid transparent;
+        }
+
+        .filter-btn.active {
+            background: #EE2B3B;
+            color: white;
+            box-shadow: 0 10px 15px -3px rgba(238, 43, 59, 0.3);
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="bg-bg-light text-secondary antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass border-b border-gray-100 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-3 cursor-pointer"
+                    onclick="window.location.href='index.html'">
+                    <img class="h-10 w-10 md:h-12 md:w-12 transition-transform hover:rotate-12"
+                        src="images/siteIcoRed.png" alt="Logo">
+                    <span class="font-bold text-2xl tracking-tight text-secondary">My <span
+                            class="text-primary">Nihongo</span> Path</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html"
+                        class="nav-link-animated text-gray-600 hover:text-primary font-medium text-lg px-3 py-2 rounded-xl transition-all">Home</a>
+                    <a href="activities.html"
+                        class="nav-link-animated text-gray-600 hover:text-primary font-medium text-lg px-3 py-2 rounded-xl transition-all">Activities</a>
+                    <a href="vocabulary.html"
+                        class="nav-link-active text-primary font-bold text-lg px-4 py-2 rounded-xl transition-all shadow-sm">Vocabulary</a>
+                    <a href="about.html"
+                        class="nav-link-animated text-gray-600 hover:text-primary font-medium text-lg px-3 py-2 rounded-xl transition-all">About</a>
+                    <a href="faq.html"
+                        class="nav-link-animated text-gray-600 hover:text-primary font-medium text-lg px-3 py-2 rounded-xl transition-all">FAQ</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-toggle" class="p-2 text-gray-600 hover:text-primary focus:outline-none">
+                        <span class="material-symbols-outlined text-3xl">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white/95 backdrop-blur-md border-b border-gray-100 animate-slide-down">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="index.html"
+                    class="block px-4 py-3 text-gray-600 hover:text-primary hover:bg-red-50 rounded-xl font-bold">Home</a>
+                <a href="activities.html"
+                    class="block px-4 py-3 text-gray-600 hover:text-primary hover:bg-red-50 rounded-xl font-bold">Activities</a>
+                <a href="vocabulary.html"
+                    class="block px-4 py-3 text-primary bg-red-50 rounded-xl font-bold">Vocabulary</a>
+                <a href="about.html"
+                    class="block px-4 py-3 text-gray-600 hover:text-primary hover:bg-red-50 rounded-xl font-bold">About</a>
+                <a href="faq.html"
+                    class="block px-4 py-3 text-gray-600 hover:text-primary hover:bg-red-50 rounded-xl font-bold">FAQ</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20">
+        <!-- Header & Search -->
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12">
+            <div>
+                <h1 class="text-4xl md:text-5xl font-black mb-3 text-secondary">Vocabulary Drills</h1>
+                <p class="text-gray-500 font-medium tracking-tight">Interactive word sets to strengthen your reading.
+                </p>
+            </div>
+            <div class="relative w-full md:w-80 group">
+                <span
+                    class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-primary transition-colors">search</span>
+                <input type="text" id="drill-search" oninput="filterDrills()"
+                    placeholder="Search sets (e.g. 'Dakuten', 'Set 1')"
+                    class="w-full pl-12 pr-4 py-4 bg-white border border-gray-200 rounded-2xl focus:ring-4 focus:ring-primary/10 focus:border-primary outline-none transition-all font-medium text-sm shadow-sm">
+            </div>
+        </div>
+
+        <!-- Filters -->
+        <div class="flex flex-wrap gap-3 mb-10 overflow-x-auto no-scrollbar pb-2">
+            <button onclick="setCategory('all')" class="filter-btn active" id="btn-all">All Drills</button>
+            <button onclick="setCategory('hiragana')"
+                class="filter-btn bg-white border-gray-200 text-gray-500 hover:border-red-200 hover:text-red-500"
+                id="btn-hiragana">Hiragana</button>
+            <button onclick="setCategory('katakana')"
+                class="filter-btn bg-white border-gray-200 text-gray-500 hover:border-blue-200 hover:text-blue-500"
+                id="btn-katakana">Katakana</button>
+            <button onclick="setCategory('review')"
+                class="filter-btn bg-white border-gray-200 text-gray-500 hover:border-green-200 hover:text-green-500"
+                id="btn-review">Reviews</button>
+        </div>
+
+        <!-- Grid Container -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="drills-grid">
+            <!-- Hiragana Drills -->
+            <div class="drill-card" data-category="hiragana">
+                <a href="practiceWords_set01.html" class="word-card block border-l-4 border-l-red-500">
+                    <div class="flex justify-between items-start mb-4">
+                        <span
+                            class="px-3 py-1 bg-red-50 text-red-600 rounded-full text-[10px] font-black uppercase tracking-widest">Hiragana
+                            Set 1</span>
+                        <span class="material-symbols-outlined text-gray-300">navigate_next</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Basic Words: A - So</h3>
+                    <p class="text-sm text-gray-500 mb-4 font-medium">Focuses on sets 1, 2, and 3 characters.</p>
+                    <div class="flex items-center gap-2 text-[10px] font-bold text-gray-400 uppercase">
+                        <span class="material-symbols-outlined text-sm">bar_chart</span> Beginner
+                    </div>
+                </a>
+            </div>
+
+            <div class="drill-card" data-category="hiragana">
+                <a href="practiceWords_set02.html" class="word-card block border-l-4 border-l-red-500">
+                    <div class="flex justify-between items-start mb-4">
+                        <span
+                            class="px-3 py-1 bg-red-50 text-red-600 rounded-full text-[10px] font-black uppercase tracking-widest">Hiragana
+                            Set 2</span>
+                        <span class="material-symbols-outlined text-gray-300">navigate_next</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Mid Words: Ta - Ho</h3>
+                    <p class="text-sm text-gray-500 mb-4 font-medium">Practice words for characters from sets 4-6.</p>
+                    <div class="flex items-center gap-2 text-[10px] font-bold text-gray-400 uppercase">
+                        <span class="material-symbols-outlined text-sm">bar_chart</span> Intermediate
+                    </div>
+                </a>
+            </div>
+
+            <div class="drill-card" data-category="hiragana">
+                <a href="practiceWords_set03.html" class="word-card block border-l-4 border-l-red-500">
+                    <div class="flex justify-between items-start mb-4">
+                        <span
+                            class="px-3 py-1 bg-red-50 text-red-600 rounded-full text-[10px] font-black uppercase tracking-widest">Hiragana
+                            Set 3</span>
+                        <span class="material-symbols-outlined text-gray-300">navigate_next</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">End Words: Ma - N</h3>
+                    <p class="text-sm text-gray-500 mb-4 font-medium">Complex words featuring final basic characters.
+                    </p>
+                    <div class="flex items-center gap-2 text-[10px] font-bold text-gray-400 uppercase">
+                        <span class="material-symbols-outlined text-sm">bar_chart</span> Advanced
+                    </div>
+                </a>
+            </div>
+
+            <!-- Hiragana Variations -->
+            <div class="drill-card" data-category="hiragana">
+                <a href="practiceWords_set05.html" class="word-card block border-l-4 border-l-red-500">
+                    <div class="flex justify-between items-start mb-4">
+                        <span
+                            class="px-3 py-1 bg-red-50 text-red-600 rounded-full text-[10px] font-black uppercase tracking-widest">Dakuten
+                            Drill</span>
+                        <span class="material-symbols-outlined text-gray-300">navigate_next</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Voiced Sounds</h3>
+                    <p class="text-sm text-gray-500 mb-4 font-medium">Words using (゛) and (゜) marks.</p>
+                    <div class="flex items-center gap-2 text-[10px] font-bold text-gray-400 uppercase">
+                        <span class="material-symbols-outlined text-sm">bar_chart</span> Intermediate
+                    </div>
+                </a>
+            </div>
+
+            <div class="drill-card" data-category="hiragana">
+                <a href="practiceWords_set06.html" class="word-card block border-l-4 border-l-red-500">
+                    <div class="flex justify-between items-start mb-4">
+                        <span
+                            class="px-3 py-1 bg-red-50 text-red-600 rounded-full text-[10px] font-black uppercase tracking-widest">Yoon
+                            Drill</span>
+                        <span class="material-symbols-outlined text-gray-300">navigate_next</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Contracted Sounds</h3>
+                    <p class="text-sm text-gray-500 mb-4 font-medium">Practice combining characters like きゃ, しゅ.</p>
+                    <div class="flex items-center gap-2 text-[10px] font-bold text-gray-400 uppercase">
+                        <span class="material-symbols-outlined text-sm">bar_chart</span> Advanced
+                    </div>
+                </a>
+            </div>
+
+            <div class="drill-card" data-category="hiragana">
+                <a href="practiceWords_set07.html" class="word-card block border-l-4 border-l-red-500">
+                    <div class="flex justify-between items-start mb-4">
+                        <span
+                            class="px-3 py-1 bg-red-50 text-red-600 rounded-full text-[10px] font-black uppercase tracking-widest">Special
+                            Rules</span>
+                        <span class="material-symbols-outlined text-gray-300">navigate_next</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Vowels & Double Consonants</h3>
+                    <p class="text-sm text-gray-500 mb-4 font-medium">Rules for long vowels and the small 'tsu' (っ).</p>
+                    <div class="flex items-center gap-2 text-[10px] font-bold text-gray-400 uppercase">
+                        <span class="material-symbols-outlined text-sm">bar_chart</span> Advanced
+                    </div>
+                </a>
+            </div>
+
+            <!-- Katakana Drills -->
+            <div class="drill-card" data-category="katakana">
+                <a href="practiceWords_set09.html" class="word-card block border-l-4 border-l-blue-500">
+                    <div class="flex justify-between items-start mb-4">
+                        <span
+                            class="px-3 py-1 bg-blue-50 text-blue-600 rounded-full text-[10px] font-black uppercase tracking-widest">Katakana
+                            Start</span>
+                        <span class="material-symbols-outlined text-gray-300">navigate_next</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Essential Loanwords</h3>
+                    <p class="text-sm text-gray-500 mb-4 font-medium">Basic names and terms in Katakana.</p>
+                    <div class="flex items-center gap-2 text-[10px] font-bold text-gray-400 uppercase">
+                        <span class="material-symbols-outlined text-sm">bar_chart</span> Beginner
+                    </div>
+                </a>
+            </div>
+
+            <div class="drill-card" data-category="katakana">
+                <a href="practiceWords_set10.html" class="word-card block border-l-4 border-l-blue-500">
+                    <div class="flex justify-between items-start mb-4">
+                        <span
+                            class="px-3 py-1 bg-blue-50 text-blue-600 rounded-full text-[10px] font-black uppercase tracking-widest">Katakana
+                            Pro</span>
+                        <span class="material-symbols-outlined text-gray-300">navigate_next</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Intermediate Katakana</h3>
+                    <p class="text-sm text-gray-500 mb-4 font-medium">Common foreign vocabulary used in Japan.</p>
+                    <div class="flex items-center gap-2 text-[10px] font-bold text-gray-400 uppercase">
+                        <span class="material-symbols-outlined text-sm">bar_chart</span> Intermediate
+                    </div>
+                </a>
+            </div>
+
+            <div class="drill-card" data-category="katakana">
+                <a href="practiceWords_set11.html" class="word-card block border-l-4 border-l-blue-500">
+                    <div class="flex justify-between items-start mb-4">
+                        <span
+                            class="px-3 py-1 bg-blue-50 text-blue-600 rounded-full text-[10px] font-black uppercase tracking-widest">Katakana
+                            Master</span>
+                        <span class="material-symbols-outlined text-gray-300">navigate_next</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Advanced Terms</h3>
+                    <p class="text-sm text-gray-500 mb-4 font-medium">Complex loanwords and specific terminology.</p>
+                    <div class="flex items-center gap-2 text-[10px] font-bold text-gray-400 uppercase">
+                        <span class="material-symbols-outlined text-sm">bar_chart</span> Advanced
+                    </div>
+                </a>
+            </div>
+
+            <div class="drill-card" data-category="katakana">
+                <a href="practiceWords_set16.html" class="word-card block border-l-4 border-l-blue-500">
+                    <div class="flex justify-between items-start mb-4">
+                        <span
+                            class="px-3 py-1 bg-purple-50 text-purple-600 rounded-full text-[10px] font-black uppercase tracking-widest">Rules
+                            Drill</span>
+                        <span class="material-symbols-outlined text-gray-300">navigate_next</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Variations & Pauses</h3>
+                    <p class="text-sm text-gray-500 mb-4 font-medium">Special Katakana rules like ー and ッ.</p>
+                    <div class="flex items-center gap-2 text-[10px] font-bold text-gray-400 uppercase">
+                        <span class="material-symbols-outlined text-sm">bar_chart</span> Advanced
+                    </div>
+                </a>
+            </div>
+
+            <!-- Review Drills -->
+            <div class="drill-card" data-category="review">
+                <a href="practiceWords_set04.html" class="word-card block border-l-4 border-l-green-600">
+                    <div class="flex justify-between items-start mb-4">
+                        <span
+                            class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-[10px] font-black uppercase tracking-widest">Hiragana
+                            Review</span>
+                        <span class="material-symbols-outlined text-gray-300">navigate_next</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">The 103 Word Drill</h3>
+                    <p class="text-sm text-gray-500 mb-4 font-medium">Ultimate master review covering all basic Hiragana
+                        vocabulary.</p>
+                    <div class="flex items-center gap-2 text-[10px] font-bold text-green-600 uppercase">
+                        <span class="material-symbols-outlined text-sm">verified</span> Comprehensive
+                    </div>
+                </a>
+            </div>
+
+            <div class="drill-card" data-category="review">
+                <a href="practiceWords_set12.html" class="word-card block border-l-4 border-l-blue-600">
+                    <div class="flex justify-between items-start mb-4">
+                        <span
+                            class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-[10px] font-black uppercase tracking-widest">Katakana
+                            Review</span>
+                        <span class="material-symbols-outlined text-gray-300">navigate_next</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Full Katakana Drill</h3>
+                    <p class="text-sm text-gray-500 mb-4 font-medium">Complete review of essential Katakana loanwords.
+                    </p>
+                    <div class="flex items-center gap-2 text-[10px] font-bold text-blue-600 uppercase">
+                        <span class="material-symbols-outlined text-sm">tour</span> All-in-one
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class=" bg-white border-t border-gray-100 pt-16 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
+                <div class="flex items-center gap-3">
+                    <img src="images/siteIcoRed.png" alt="Logo" class="w-10 h-10 transition-all hover:rotate-12">
+                    <span class="font-black text-2xl text-secondary">My Nihongo Path</span>
+                </div>
+                <div class="flex gap-6 text-sm font-bold text-gray-400">
+                    <a href="index.html" class="hover:text-primary transition-colors">Home</a>
+                    <a href="activities.html" class="hover:text-primary transition-colors">Activities</a>
+                    <a href="vocabulary.html" class="hover:text-primary transition-colors">Vocabulary</a>
+                    <a href="about.html" class="hover:text-primary transition-colors">About</a>
+                    <a href="faq.html" class="hover:text-primary transition-colors">FAQ</a>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-gray-400">
+                <p class="font-medium">&copy; 2025 <span class="text-secondary font-bold">My Nihongo Path</span>. All
+                    rights reserved.</p>
+                <div class="flex items-center gap-2">
+                    <span class="text-[10px] uppercase font-black bg-gray-100 px-2 py-1 rounded">Dev</span>
+                    <a href="https://www.linkedin.com/in/yigeenula" target="_blank"
+                        class="text-gray-600 hover:text-primary font-bold transition-colors">Yasiru Isum Geenula</a>
+                    <span class="mx-2 text-gray-200">/</span>
+                    <a href="https://codexblaze.online/" target="_blank"
+                        class="text-gray-600 hover:text-primary font-bold transition-colors">CodeXBlaze</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let currentCategory = 'all';
+
+        function setCategory(category) {
+            currentCategory = category;
+            filterDrills();
+        }
+
+        function filterDrills() {
+            const searchQuery = document.getElementById('drill-search').value.toLowerCase();
+            const cards = document.querySelectorAll('.drill-card');
+            const btns = document.querySelectorAll('.filter-btn');
+
+            // Update buttons
+            btns.forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.id === `btn-${currentCategory}`) btn.classList.add('active');
+            });
+
+            // Filter grid
+            cards.forEach(card => {
+                const title = card.querySelector('h3').innerText.toLowerCase();
+                const desc = card.querySelector('p').innerText.toLowerCase();
+                const category = card.dataset.category;
+
+                const matchesSearch = title.includes(searchQuery) || desc.includes(searchQuery);
+                const matchesCategory = currentCategory === 'all' || category === currentCategory;
+
+                if (matchesSearch && matchesCategory) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Mobile Menu Toggle
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggle = document.getElementById('mobile-menu-toggle');
+            const menu = document.getElementById('mobile-menu');
+
+            if (toggle && menu) {
+                toggle.addEventListener('click', () => {
+                    menu.classList.toggle('hidden');
+                    const icon = toggle.querySelector('span');
+                    icon.textContent = menu.classList.contains('hidden') ? 'menu' : 'close';
+                });
+            }
+
+            // Sticky Nav Shadow on scroll
+            window.addEventListener('scroll', () => {
+                const navbar = document.getElementById('navbar');
+                if (navbar) {
+                    if (window.scrollY > 20) {
+                        navbar.classList.add('shadow-xl');
+                    } else {
+                        navbar.classList.remove('shadow-xl');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

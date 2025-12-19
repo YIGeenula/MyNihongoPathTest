@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.online/gtag/js?id=G-9VTJR4ZW26"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-9VTJR4ZW26');
+    </script>
+
+    <!-- Basic Meta -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>My Nihongo Path – Your Japanese Journey</title>
+
+    <meta name="description"
+        content="Learn Japanese with My Nihongo Path. Master Hiragana, Katakana, vocabulary, and JLPT concepts through interactive lessons in English and Sinhala." />
+
+    <meta name="keywords"
+        content="Learn Japanese, Hiragana, Katakana, JLPT, Sinhala Japanese lessons, Japanese vocabulary, My Nihongo Path" />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Yasiru Isum Geenula" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://mynihongopath.online/" />
+
+    <!-- Favicon (IMPORTANT for Google icon) -->
+    <link rel="icon" type="image/png" href="images/siteIcoRed.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mynihongopath.online/" />
+    <meta property="og:title" content="My Nihongo Path – Your Japanese Journey" />
+    <meta property="og:description"
+        content="Master Japanese simply with lessons guided by English and Sinhala. Interactive resources for Hiragana, Katakana, and more." />
+    <meta property="og:image" content="https://mynihongopath.online/images/siteIcoRed.png" />
+    <meta property="og:site_name" content="My Nihongo Path" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://mynihongopath.online/" />
+    <meta name="twitter:title" content="My Nihongo Path – Your Japanese Journey" />
+    <meta name="twitter:description"
+        content="Learn Japanese with interactive lessons in English and Sinhala. Start your journey with My Nihongo Path." />
+    <meta name="twitter:image" content="https://mynihongopath.online/images/siteIcoRed.png" />
+
+    <!-- ✅ Structured Data: Organization (LOGO SOURCE) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "My Nihongo Path",
+      "url": "https://mynihongopath.online/",
+      "logo": "https://mynihongopath.online/images/siteIcoRed.png"
+    }
+    </script>
+
+    <!-- ✅ Structured Data: Website (SITE NAME FIX)-->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "My Nihongo Path",
+      "alternateName": "My Nihongo Path – Learn Japanese",
+      "url": "https://mynihongopath.online/"
+    }
+    </script>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+Sinhala:wght@400;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="sakura.css" />
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#EE2B3B",
+                        "primary-dark": "#C41E2B",
+                        secondary: "#1A1A1A",
+                        accent: "#FF9AA2",
+                        "accent-light": "#FFB7B2",
+                        "bg-light": "#FAFAFA",
+                        "text-main": "#2D3748",
+                        "text-muted": "#718096",
+                    },
+                    fontFamily: {
+                        sans: ["Lexend", "sans-serif"],
+                        jp: ["Noto Sans JP", "sans-serif"],
+                        sinhala: ["Noto Sans Sinhala", "sans-serif"],
+                    },
+                    backgroundImage: {
+                        'hero-pattern': "url('images/hero_bg.png')",
+                    },
+                },
+            },
+        };
+    </script>
+
+    <style>
+        body {
+            font-family: 'Lexend', sans-serif;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+        }
+
+        .glass-dark {
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+
+
+<body class="bg-bg-light text-text-main antialiased selection:bg-primary selection:text-white">
+
+    <!-- Splash Screen (Shoji Style) -->
+    <div id="splash-screen">
+        <div class="splash-door door-left" id="door-left">
+            <!-- Decorative Chars Left -->
+            <span class="floating-char text-6xl top-6 left-8 delay-150 opacity-40">春</span>
+            <span class="floating-char text-5xl top-14 right-10 delay-250 opacity-30">み</span>
+            <span class="floating-char text-7xl top-1/3 left-1/4 delay-200 opacity-50">ア</span>
+            <span class="floating-char text-4xl top-1/4 right-1/3 delay-300 opacity-20">道</span>
+            <span class="floating-char text-8xl bottom-10 left-16 delay-100 opacity-50">空</span>
+            <span class="floating-char text-6xl bottom-24 right-20 delay-180 opacity-35">れ</span>
+            <span class="floating-char text-5xl bottom-1/3 left-1/5 delay-260 opacity-25">光</span>
+            <span class="floating-char text-7xl bottom-1/4 right-1/4 delay-320 opacity-45">風</span>
+            <span class="floating-char text-7xl top-1/2 left-6 delay-220 opacity-40">カ</span>
+            <span class="floating-char text-5xl top-1/2 right-8 delay-300 opacity-20">ロ</span>
+            <span class="floating-char text-8xl bottom-6 right-10 delay-350 opacity-55">JP</span>
+        </div>
+        <div class="splash-door door-right" id="door-right">
+            <span class="floating-char text-6xl top-6 left-8 delay-150 opacity-40">さ</span>
+            <span class="floating-char text-5xl top-14 right-10 delay-250 opacity-30">み</span>
+            <span class="floating-char text-7xl top-1/3 left-1/4 delay-200 opacity-50">ア</span>
+            <span class="floating-char text-4xl top-1/4 right-1/3 delay-300 opacity-20">道</span>
+            <span class="floating-char text-8xl bottom-10 left-16 delay-100 opacity-50">空</span>
+            <span class="floating-char text-6xl bottom-24 right-20 delay-180 opacity-35">れ</span>
+            <span class="floating-char text-5xl bottom-1/3 left-1/5 delay-260 opacity-25">光</span>
+            <span class="floating-char text-7xl bottom-1/4 right-1/4 delay-320 opacity-45">フ</span>
+            <span class="floating-char text-7xl top-1/2 left-6 delay-220 opacity-40">カ</span>
+            <span class="floating-char text-5xl top-1/2 right-8 delay-300 opacity-20">ロ</span>
+            <span class="floating-char text-8xl bottom-6 right-10 delay-350 opacity-55">海</span>
+
+        </div>
+
+        <div class="splash-content" id="splash-content">
+            <div class="splash-logo-container">
+                <img src="images/siteIcoRed.png" alt="Logo" class="splash-logo">
+            </div>
+            <h1 class="text-3xl font-bold tracking-widest uppercase">My Nihongo Path</h1>
+            <p class="text-sm tracking-widest mt-2 opacity-90">Loading...</p>
+        </div>
+    </div>
+
+    <script>
+        // Splash Screen Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const doorLeft = document.getElementById('door-left');
+            const doorRight = document.getElementById('door-right');
+            const content = document.getElementById('splash-content');
+            const splashScreen = document.getElementById('splash-screen');
+
+            // Wait a bit, then open doors
+            setTimeout(() => {
+                // Fade out content
+                content.classList.add('fade-out');
+
+                // Slide Doors Open
+                setTimeout(() => {
+                    doorLeft.classList.add('open');
+                    doorRight.classList.add('open');
+
+                    // Remove checks/pointer events
+                    setTimeout(() => {
+                        splashScreen.classList.add('complete');
+                    }, 1200); // Wait for transition
+                }, 300);
+            }, 1500); // Initial delay
+
+            // Mobile Menu Toggle
+            const toggle = document.getElementById('mobile-menu-toggle');
+            const menu = document.getElementById('mobile-menu');
+
+            if (toggle && menu) {
+                toggle.addEventListener('click', () => {
+                    menu.classList.toggle('hidden');
+                    const icon = toggle.querySelector('span');
+                    icon.textContent = menu.classList.contains('hidden') ? 'menu' : 'close';
+                });
+            }
+
+            // Sticky Nav Shadow on scroll
+            window.addEventListener('scroll', () => {
+                const navbar = document.getElementById('navbar');
+                if (navbar) {
+                    if (window.scrollY > 20) {
+                        navbar.classList.add('shadow-xl');
+                    } else {
+                        navbar.classList.remove('shadow-xl');
+                    }
+                }
+            });
+        });
+    </script>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass border-b border-gray-100 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-3 cursor-pointer"
+                    onclick="window.location.href='index.html'">
+                    <img class="h-10 w-10 md:h-12 md:w-12 transition-transform hover:rotate-12"
+                        src="images/siteIcoRed.png" alt="Logo">
+                    <span class="font-bold text-2xl tracking-tight text-secondary">My <span
+                            class="text-primary">Nihongo</span> Path</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html"
+                        class="nav-link-active text-primary font-bold text-lg px-4 py-2 rounded-xl transition-all shadow-sm">Home</a>
+                    <a href="activities.html"
+                        class="nav-link-animated text-gray-600 hover:text-primary font-medium text-lg px-3 py-2 rounded-xl transition-all">Activities</a>
+                    <a href="vocabulary.html"
+                        class="nav-link-animated text-gray-600 hover:text-primary font-medium text-lg px-3 py-2 rounded-xl transition-all">Vocabulary</a>
+                    <a href="about.html"
+                        class="nav-link-animated text-gray-600 hover:text-primary font-medium text-lg px-3 py-2 rounded-xl transition-all">About</a>
+                    <a href="faq.html"
+                        class="nav-link-animated text-gray-600 hover:text-primary font-medium text-lg px-3 py-2 rounded-xl transition-all">FAQ</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-toggle" class="p-2 text-gray-600 hover:text-primary focus:outline-none">
+                        <span class="material-symbols-outlined text-3xl">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white/95 backdrop-blur-md border-b border-gray-100 animate-slide-down">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="index.html" class="block px-4 py-3 text-primary bg-red-50 rounded-xl font-bold">Home</a>
+                <a href="activities.html"
+                    class="block px-4 py-3 text-gray-600 hover:text-primary hover:bg-red-50 rounded-xl font-bold">Activities</a>
+                <a href="vocabulary.html"
+                    class="block px-4 py-3 text-gray-600 hover:text-primary hover:bg-red-50 rounded-xl font-bold">Vocabulary</a>
+                <a href="about.html"
+                    class="block px-4 py-3 text-gray-600 hover:text-primary hover:bg-red-50 rounded-xl font-bold">About</a>
+                <a href="faq.html"
+                    class="block px-4 py-3 text-gray-600 hover:text-primary hover:bg-red-50 rounded-xl font-bold">FAQ</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero-section" class="relative w-full h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Image -->
+        <div
+            class="absolute inset-0 bg-hero-pattern bg-cover bg-center bg-no-repeat transition-transform duration-[10s] hover:scale-105">
+        </div>
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-white/30 via-white/10 to-bg-light"></div>
+
+        <!-- Content -->
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto flex flex-col gap-6 animate-slide-up">
+            <span
+                class="inline-block py-1 px-3 rounded-full bg-white/80 backdrop-blur-sm border border-accent text-primary font-bold text-sm tracking-widest uppercase mb-2 shadow-sm w-fit mx-auto">
+                無料日本語レッスン
+            </span>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-secondary leading-tight tracking-tight drop-shadow-sm">
+                Unlock Your <br />
+                <span
+                    class="text-primary transparent bg-clip-text bg-gradient-to-r from-primary to-pink-500 text-gradient-animated">Japanese
+                    Potential</span>
+            </h1>
+            <p class="text-lg md:text-2xl text-gray-700 font-medium max-w-2xl mx-auto leading-relaxed">
+                Master Japanese with ease through lessons guided in <span
+                    class="font-bold text-secondary">English</span> and <span
+                    class="font-bold font-sinhala text-secondary">Sinhala</span>.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+                <a href="activities.html"
+                    class="btn-shine group relative px-8 py-4 bg-primary text-white rounded-full font-bold text-lg shadow-xl shadow-primary/40 overflow-hidden transition-all hover:shadow-2xl hover:-translate-y-1">
+                    <div
+                        class="absolute inset-0 w-full h-full bg-white/20 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500">
+                    </div>
+                    <span class="relative flex items-center gap-2">
+                        Start Learning Free
+                        <span class="material-symbols-outlined text-xl">arrow_forward</span>
+                    </span>
+                </a>
+                <a href="#features"
+                    class="px-8 py-4 bg-white text-secondary border-2 border-gray-100 rounded-full font-bold text-lg shadow-lg hover:border-accent hover:text-primary transition-all hover:-translate-y-1">
+                    Explore Features
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div
+            class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer opacity-70 hover:opacity-100">
+            <a href="#features" class="text-gray-400 hover:text-primary transition-colors">
+                <span class="material-symbols-outlined text-4xl">keyboard_arrow_down</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 px-4 bg-bg-light relative overflow-hidden">
+        <!-- Decor -->
+        <div
+            class="absolute top-0 right-0 w-64 h-64 bg-accent/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2">
+        </div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Why Choose <span class="text-primary">My
+                        Nihongo Path</span>?</h2>
+                <div class="w-24 h-1 bg-primary mx-auto rounded-full mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">We simplify the learning process by using familiar
+                    languages and interactive tools.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div
+                    class="card-hover-effect animate-fade-up delay-100 bg-white p-8 rounded-3xl shadow-lg transition-all duration-300 group border border-gray-100">
+                    <div
+                        class="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                        <span
+                            class="material-symbols-outlined text-3xl text-primary group-hover:text-white transition-colors">translate</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-3">Dual Language Support</h3>
+                    <p class="text-gray-500 leading-relaxed">
+                        Every lesson is explained in both <b>English</b> and <b>Sinhala</b>, making it easier for Sri
+                        Lankan learners to grasp nuances.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div
+                    class="card-hover-effect animate-fade-up delay-200 bg-white p-8 rounded-3xl shadow-lg transition-all duration-300 group border border-gray-100">
+                    <div
+                        class="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                        <span
+                            class="material-symbols-outlined text-3xl text-primary group-hover:text-white transition-colors">touch_app</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-3">Interactive Activities</h3>
+                    <p class="text-gray-500 leading-relaxed">
+                        Engage with flashcards, quizzes, and writing practice tools designed to reinforce your memory
+                        effectively.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div
+                    class="card-hover-effect animate-fade-up delay-300 bg-white p-8 rounded-3xl shadow-lg transition-all duration-300 group border border-gray-100">
+                    <div
+                        class="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                        <span
+                            class="material-symbols-outlined text-3xl text-primary group-hover:text-white transition-colors">savings</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-3">100% Free Access</h3>
+                    <p class="text-gray-500 leading-relaxed">
+                        Quality education should be accessible. Enjoy all our lessons, tools, and updates completely
+                        free of charge.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Activity Preview -->
+    <section class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="bg-secondary rounded-[2.5rem] p-8 md:p-16 relative overflow-hidden text-white shadow-2xl">
+                <!-- Background Pattern -->
+                <div
+                    class="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-gray-500 via-gray-900 to-black">
+                </div>
+                <div class="absolute -right-20 -top-20 text-[20rem] opacity-5 font-jp font-bold select-none">あ</div>
+
+                <div class="relative z-10 flex flex-col md:flex-row items-center gap-12">
+                    <div class="flex-1 space-y-6 text-center md:text-left">
+                        <div
+                            class="flex items-center gap-2 justify-center md:justify-start text-accent font-bold tracking-wider uppercase text-sm">
+                            <span class="w-8 h-[2px] bg-accent"></span>
+                            Featured Activity
+                        </div>
+                        <h2 class="text-4xl md:text-5xl font-bold leading-tight">Learn the <span
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Japanese
+                                Language</span>
+                            Basics</h2>
+                        <p class="text-gray-300 text-lg leading-relaxed">
+                            Start your journey with the fundamental Japanese alphabet. Learn reading, writing, and
+                            pronunciation with our comprehensive guide.
+                        </p>
+                        <div class="pt-4">
+                            <a href="activities.html"
+                                class="inline-flex items-center justify-center px-8 py-4 bg-white text-secondary rounded-full font-bold hover:bg-gray-100 transition-colors">
+                                Explore Activities
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex-1 w-full max-w-md">
+                        <div
+                            class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 shadow-xl transform rotate-2 hover:rotate-0 transition-transform duration-500">
+                            <div class="flex items-center justify-between mb-6">
+                                <div class="flex items-center gap-3">
+                                    <span class="w-3 h-3 rounded-full bg-red-500"></span>
+                                    <span class="w-3 h-3 rounded-full bg-yellow-500"></span>
+                                    <span class="w-3 h-3 rounded-full bg-green-500"></span>
+                                </div>
+                                <span class="text-xs text-gray-400">Preview</span>
+                            </div>
+                            <div class="space-y-4">
+                                <div
+                                    class="bg-white/5 p-4 rounded-xl flex items-center gap-4 hover:bg-white/10 transition-colors cursor-pointer">
+                                    <span
+                                        class="text-3xl bg-primary/20 w-12 h-12 flex items-center justify-center rounded-lg text-primary font-bold">あ</span>
+                                    <div>
+                                        <h4 class="font-bold">Hiragana</h4>
+                                        <p class="text-sm text-gray-400">Native Japanese letters</p>
+                                    </div>
+                                    <span class="material-symbols-outlined ml-auto text-gray-400">chevron_right</span>
+                                </div>
+                                <div
+                                    class="bg-white/5 p-4 rounded-xl flex items-center gap-4 hover:bg-white/10 transition-colors cursor-pointer">
+                                    <span
+                                        class="text-3xl bg-blue-500/20 w-12 h-12 flex items-center justify-center rounded-lg text-blue-400 font-bold">ア</span>
+                                    <div>
+                                        <h4 class="font-bold">Katakana</h4>
+                                        <p class="text-sm text-gray-400">Foreign/loan words</p>
+                                    </div>
+                                    <span class="material-symbols-outlined ml-auto text-gray-400">chevron_right</span>
+                                </div>
+                                <div
+                                    class="bg-white/5 p-4 rounded-xl flex items-center gap-4 hover:bg-white/10 transition-colors cursor-pointer">
+                                    <span
+                                        class="text-3xl bg-purple-500/20 w-12 h-12 flex items-center justify-center rounded-lg text-purple-400 font-bold">習</span>
+                                    <div>
+                                        <h4 class="font-bold">Kanji</h4>
+                                        <p class="text-sm text-gray-400">Chinese character symbols</p>
+                                    </div>
+                                    <span class="material-symbols-outlined ml-auto text-gray-400">chevron_right</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class=" bg-white border-t border-gray-100 pt-16 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
+                <div class="flex items-center gap-3">
+                    <img src="images/siteIcoRed.png" alt="Logo" class="w-10 h-10 transition-all hover:rotate-12">
+                    <span class="font-black text-2xl text-secondary">My Nihongo Path</span>
+                </div>
+                <div class="flex gap-6 text-sm font-bold text-gray-400">
+                    <a href="index.html" class="hover:text-primary transition-colors">Home</a>
+                    <a href="activities.html" class="hover:text-primary transition-colors">Activities</a>
+                    <a href="vocabulary.html" class="hover:text-primary transition-colors">Vocabulary</a>
+                    <a href="about.html" class="hover:text-primary transition-colors">About</a>
+                    <a href="faq.html" class="hover:text-primary transition-colors">FAQ</a>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-gray-400">
+                <p class="font-medium">&copy; 2025 <span class="text-secondary font-bold">My Nihongo Path</span>. All
+                    rights reserved.</p>
+                <div class="flex items-center gap-2">
+                    <span class="text-[10px] uppercase font-black bg-gray-100 px-2 py-1 rounded">Dev</span>
+                    <a href="https://www.linkedin.com/in/yigeenula" target="_blank"
+                        class="text-gray-600 hover:text-primary font-bold transition-colors">Yasiru Isum Geenula</a>
+                    <span class="mx-2 text-gray-200">/</span>
+                    <a href="https://codexblaze.online/" target="_blank"
+                        class="text-gray-600 hover:text-primary font-bold transition-colors">CodeXBlaze</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        // Sakura Falling Effect
+        document.addEventListener('DOMContentLoaded', () => {
+            const heroSection = document.getElementById('hero-section');
+            if (!heroSection) return;
+
+            const sakuraContainer = document.createElement('div');
+            sakuraContainer.className = 'sakura-container';
+            heroSection.appendChild(sakuraContainer);
+
+            const createPetal = () => {
+                const petal = document.createElement('div');
+                petal.classList.add('sakura');
+
+                // Random Size (10px - 20px)
+                const size = Math.random() * 10 + 10;
+                petal.style.width = `${size}px`;
+                petal.style.height = `${size}px`;
+
+                // Random Start Position
+                petal.style.left = `${Math.random() * 100}vw`;
+
+                // Random Animation Duration (6s - 12s)
+                const duration = Math.random() * 6 + 6;
+                petal.style.animation = `fall ${duration}s linear infinite, sway ${Math.random() * 4 + 3}s ease-in-out infinite`;
+
+                // Random Delay
+                petal.style.animationDelay = `-${Math.random() * 5}s`;
+
+                sakuraContainer.appendChild(petal);
+
+                // Remove petal after it falls to prevent DOM bloat
+                setTimeout(() => {
+                    petal.remove();
+                }, duration * 1000);
+            };
+
+            // Limit petal count to avoid performance issues
+            setInterval(() => {
+                if (document.querySelectorAll('.sakura').length < 50) {
+                    createPetal();
+                }
+            }, 300);
+        });
+    </script>
+</body>
+
+</html>
