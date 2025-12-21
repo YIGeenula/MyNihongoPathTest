@@ -13,7 +13,51 @@
     </script>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Practice Words (Set 05) - My Nihongo Path</title>
+    <title>Vocabulary Practice 4th Lesson (හතරවන පාඩම) - My Nihongo Path</title>
+    <meta name="description"
+        content="Practice Japanese vocabulary from the 4th Lesson (හතරවන පාඩම). Interactive flashcards and quizzes to master time, verbs, and more." />
+    <meta name="keywords"
+        content="Japanese vocabulary practice, 4th Lesson, Nihongo, Japanese flashcards, My Nihongo Path, හතරවන පාඩම" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://mynihongopath.online/practiceWords_set17.html" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://mynihongopath.online/practiceWords_set17.html" />
+    <meta property="og:title" content="Vocabulary Practice 4th Lesson (හතරවන පාඩම) - My Nihongo Path" />
+    <meta property="og:description"
+        content="Interactive Japanese vocabulary practice for the 4th Lesson (හතරවන පාඩම)." />
+    <meta property="og:image" content="https://mynihongopath.online/images/siteIcoRed.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content="Vocabulary Practice 4th Lesson (හතරවන පාඩම) - My Nihongo Path" />
+    <meta property="twitter:description"
+        content="Interactive Japanese vocabulary practice for the 4th Lesson (හතරවන පාඩම)." />
+
+    <!-- JSON-LD Breadcrumbs -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://mynihongopath.online/index.html"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Vocabulary",
+        "item": "https://mynihongopath.online/vocabulary.html"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Practice Words 4th Lesson",
+        "item": "https://mynihongopath.online/practiceWords_set17.html"
+      }]
+    }
+    </script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link rel="icon" type="image/x-icon" href="images/siteIcoRed.png">
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700;900&display=swap" rel="stylesheet" />
@@ -23,7 +67,7 @@
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#ee2b3b",
+                        "primary": "#EF4444", // Red for Vocabulary
                         "background-light": "#fcf8f8",
                         "brand-dark": "#1b0d0f",
                         "brand-subtle": "#f3e7e8",
@@ -36,50 +80,6 @@
             }
         };
     </script>
-    <style>
-        body {
-            font-family: 'Lexend', sans-serif;
-        }
-
-        .fade-enter {
-            animation: fadeIn 0.5s ease-out forwards;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .progress-bar {
-            transition: width 1s linear;
-        }
-
-        /* Custom Scrollbar */
-        .custom-scrollbar::-webkit-scrollbar {
-            width: 8px;
-        }
-
-        .custom-scrollbar::-webkit-scrollbar-track {
-            background: #f1f1f1;
-            border-radius: 4px;
-        }
-
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-            background: #cbd5e1;
-            border-radius: 4px;
-        }
-
-        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-            background: #94a3b8;
-        }
-    </style>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <style>
         body {
@@ -163,17 +163,74 @@
             background: #94a3b8;
         }
     </style>
-</head>
+    <!-- Confetti for Rewards -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <style>
+        /* Animations */
+        @keyframes shake {
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(-5px);
+            }
+
+            75% {
+                transform: translateX(5px);
+            }
+        }
+
+        .animate-shake {
+            animation: shake 0.3s ease-in-out;
+        }
+
+        @keyframes pop {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .animate-pop {
+            animation: pop 0.3s ease-out;
+        }
+
+        @keyframes float-up {
+            0% {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-50px) scale(1.5);
+                opacity: 0;
+            }
+        }
+
+        .streak-fire {
+            animation: float-up 0.8s ease-out forwards;
+        }
+    </style>
 
 <body class="bg-background-light font-display">
     <div class="min-h-screen px-4 sm:px-10 lg:px-20 xl:px-40 py-8 flex justify-center">
         <div class="w-full max-w-[900px] flex flex-col gap-6">
             <header class="flex items-center justify-between border-b border-brand-subtle pb-4">
-                <h1 class="text-brand-dark text-2xl font-black">Word Practice - Set 05</h1>
-                <a href="set05.html"
+                <h1 class="text-brand-dark text-2xl font-black">Word Practice - 4th Lesson (හතරවන පාඩම)</h1>
+                <a href="vocabulary.html"
                     class="flex items-center gap-2 text-muted-indigo hover:text-primary transition-colors">
                     <span class="material-symbols-outlined">arrow_back</span>
-                    <span>Back to Letters</span>
+                    <span>Back to Vocabulary</span>
                 </a>
             </header>
 
@@ -186,8 +243,8 @@
                         </div>
                         <div>
                             <h2 class="text-xl font-black text-brand-dark">Study & Select</h2>
-                            <p class="text-muted-indigo text-sm">Review the words and select the ones you want to
-                                practice.</p>
+                            <p class="text-muted-indigo text-sm">Review the words from the 4th Lesson (හතරවන පාඩම) and
+                                select the ones you want to practice.</p>
                         </div>
                     </div>
 
@@ -224,10 +281,11 @@
                 </div>
             </div>
 
+            <!-- Practice Area (Hidden initially) -->
             <div id="practiceArea" class="hidden flex-col gap-6 w-full max-w-2xl mx-auto">
                 <!-- Status Bar -->
                 <div class="flex items-center justify-between text-sm font-bold text-muted-indigo">
-                    <span id="progressText">Word 1 of 10</span>
+                    <span id="progressText">Word 1 of 30</span>
                     <span id="timerText" class="text-primary text-xl">10s</span>
                 </div>
 
@@ -257,7 +315,7 @@
                 </div>
             </div>
 
-            <!-- Quiz Area -->
+            <!-- Quiz Area (Hidden initially) -->
             <div id="quizArea" class="hidden flex-col gap-6 w-full max-w-2xl mx-auto fade-enter">
                 <!-- Quiz Header -->
                 <div
@@ -326,7 +384,7 @@
                         class="px-8 py-3 rounded-full border-2 border-brand-subtle font-bold text-brand-dark hover:border-primary hover:text-primary transition-colors flex items-center gap-2">
                         <span class="material-symbols-outlined">replay</span> Practice Again
                     </button>
-                    <a href="set05.html"
+                    <a href="vocabulary.html"
                         class="px-8 py-3 rounded-full bg-brand-dark text-white font-bold hover:bg-opacity-90 transition-opacity flex items-center gap-2">
                         <span class="material-symbols-outlined">check</span> Finish
                     </a>
@@ -368,55 +426,68 @@
         </div>
     </footer>
 
-    <!-- Data Script -->
     <script>
         const wordList = [
-            // Set 05 & 06
-            { jp: "みず", en: "Water", si: "වතුර", romaji: "mizu" },
-            { jp: "ごはん", en: "Cooked rice / Meal", si: "බත් / ආහාර", romaji: "gohan" },
-            { jp: "たべもの", en: "Food", si: "කෑම වර්ග", romaji: "tabemono" },
-            { jp: "あさごはん", en: "Breakfast", si: "උදේ කෑම", romaji: "asagohan" },
-            { jp: "ひるごはん", en: "Lunch", si: "දවල් කෑම", romaji: "hirugohan" },
-            { jp: "ばんごはん", en: "Dinner", si: "රාත්‍රී කෑම", romaji: "bangohan" },
-            { jp: "かばん", en: "Bag", si: "බෑගය", romaji: "kaban" },
-            { jp: "げんご", en: "Language", si: "භාෂාව", romaji: "gengo" },
-            { jp: "にほんご", en: "Japanese language", si: "ජපන් භාෂාව", romaji: "nihongo" },
-            { jp: "てがみ", en: "Letter", si: "ලිපිය", romaji: "tegami" },
-            { jp: "えんぴつ", en: "Pencil", si: "පැන්සල", romaji: "enpitsu" },
-            { jp: "さくぶん", en: "Essay", si: "රචනාව", romaji: "sakubun" },
-            { jp: "さんぽ", en: "Walk", si: "ඇවිදීම", romaji: "sanpo" },
-            { jp: "たばこ", en: "Cigarette/Tobacco", si: "සිගරට්", romaji: "tabako" },
-            { jp: "りんご", en: "Apple", si: "ඇපල්", romaji: "ringo" },
-            { jp: "ぼく", en: "I (used by males)", si: "මම (පිරිමි ළමයින්)", romaji: "boku" },
-            { jp: "じぶん", en: "Self", si: "තමන්", romaji: "jibun" },
-            { jp: "じかん", en: "Time", si: "වෙලාව", romaji: "jikan" },
-            { jp: "おんがく", en: "Music", si: "සංගීතය", romaji: "ongaku" },
-            { jp: "でんわ", en: "Telephone", si: "දුරකථනය", romaji: "denwa" },
-            { jp: "てんき", en: "Weather", si: "කාලගුණය", romaji: "tenki" },
-            { jp: "でんき", en: "Electricity/Light", si: "විදුලිය / විදුලි ආලෝකය", romaji: "denki" },
-            { jp: "かぜ", en: "Wind / Flu", si: "සුළඟ / සෙම්ප්‍රතිශ්‍යාව", romaji: "kaze" },
-            { jp: "かざん", en: "Volcano", si: "ගිනි කන්ද", romaji: "kazan" },
-            { jp: "ふじさん", en: "Mt. Fuji", si: "ෆුජි කන්ද", romaji: "fujisan" },
-            { jp: "かじ", en: "Fire/Fire incident", si: "ගින්න", romaji: "kaji" },
-            { jp: "じしん", en: "Earthquake", si: "භූමිකම්පාව", romaji: "jishin" },
-            { jp: "しけん", en: "Exam/Test", si: "විභාගය", romaji: "shiken" },
-            { jp: "しんぶん", en: "Newspaper", si: "පුවත්පත", romaji: "shinbun" },
-            { jp: "まど", en: "Window", si: "ජනේලය", romaji: "mado" },
-            { jp: "だいがく", en: "University", si: "විශ්වවිද්‍යාලය", romaji: "daigaku" },
-            { jp: "くだもの", en: "Fruit", si: "පලතුරු", romaji: "kudamono" },
-            { jp: "ひがし", en: "East", si: "නැගෙනහිර", romaji: "higashi" },
-            { jp: "みぎ", en: "Right", si: "දකුණ", romaji: "migi" },
-            { jp: "ひだり", en: "Left", si: "වම්", romaji: "hidari" },
-            { jp: "ほん", en: "Book", si: "පොත", romaji: "hon" },
-            { jp: "ほんだな", en: "Bookshelf", si: "පොත් රාක්කය", romaji: "hondana" },
-            { jp: "とり", en: "Bird", si: "කුරුල්ලා", romaji: "tori" },
-            { jp: "とりにく", en: "Chicken meat", si: "කුකුළු මස්", romaji: "toriniku" },
-            { jp: "ぶた", en: "Pig", si: "ඌරා", romaji: "buta" },
-            { jp: "ぶたにく", en: "Pork", si: "ඌරු මස්", romaji: "butaniku" },
-            { jp: "げたばこ", en: "Shoe rack", si: "සපත්තු රාක්කය (Shoe rack)", romaji: "getabako" },
-            { jp: "げんかん", en: "Entrance", si: "ඇතුල්වීමේ දොරටුව", romaji: "genkan" },
-            { jp: "げんき", en: "Healthy", si: "සෞඛ්‍ය සම්පන්න", romaji: "genki" },
-            { jp: "ごみ", en: "Trash/Garbage", si: "කුණු", romaji: "gomi" }
+            { jp: "おきます", en: "Get up", si: "අවදිවෙනවා", romaji: "okimasu" },
+            { jp: "ねます", en: "Sleep", si: "නිදා ගන්නවා", romaji: "nemasu" },
+            { jp: "はたらきます", en: "Work", si: "වැඩ කරනවා", romaji: "hatarakimasu" },
+            { jp: "やすみます", en: "Rest", si: "විවේක ගන්නවා", romaji: "yasumimasu" },
+            { jp: "べんきょうします", en: "Study", si: "ඉගෙන ගන්නවා", romaji: "benkyoushimasu" },
+            { jp: "おわります", en: "Finish", si: "අවසන් වෙනවා", romaji: "owarimasu" },
+            { jp: "デパート", en: "Department Store", si: "සුපිරි වෙළඳසැල", romaji: "depāto" },
+            { jp: "ぎんこう", en: "Bank", si: "බැංකුව", romaji: "ginkou" },
+            { jp: "ゆうびんきょく", en: "Post Office", si: "තැපැල් කන්තෝරුව", romaji: "yuubinkyoku" },
+            { jp: "としょかん", en: "Library", si: "පුස්තකාලය", romaji: "toshokan" },
+            { jp: "びじゅつかん", en: "Art Museum", si: "කලා කෞතුකාගාරය", romaji: "bijutsukan" },
+            { jp: "いま", en: "Now", si: "දැන්", romaji: "ima" },
+            { jp: "ーじ", en: "o'clock", si: "පැය", romaji: "ji" },
+            { jp: "ーふん", en: "minute", si: "විනාඩි", romaji: "fun" },
+            { jp: "はん", en: "Half", si: "භාගය / හමාර", romaji: "han" },
+            { jp: "なんじ", en: "What time?", si: "වේලාව කීයද?", romaji: "nanji" },
+            { jp: "なんぷん", en: "What minute?", si: "විනාඩි කීයද?", romaji: "nanpun" },
+            { jp: "ごぜん", en: "AM", si: "පෙරවරු", romaji: "gozen" },
+            { jp: "ごご", en: "PM", si: "පස්වරු", romaji: "gogo" },
+            { jp: "あさ", en: "Morning", si: "උදය කාලය", romaji: "asa" },
+            { jp: "ひる", en: "Noon / Daytime", si: "දිවා කාලය", romaji: "hiru" },
+            { jp: "ばん (よる)", en: "Evening / Night", si: "රාත්‍රිය", romaji: "ban" },
+            { jp: "おととい", en: "Day before yesterday", si: "පෙරේදා", romaji: "ototoi" },
+            { jp: "きのう", en: "Yesterday", si: "ඊයේ", romaji: "kinou" },
+            { jp: "きょう", en: "Today", si: "අද", romaji: "kyou" },
+            { jp: "あした", en: "Tomorrow", si: "හෙට", romaji: "ashita" },
+            { jp: "あさって", en: "Day after tomorrow", si: "අනිද්දා", romaji: "asatte" },
+            { jp: "けさ", en: "This morning", si: "අද උදය", romaji: "kesa" },
+            { jp: "こんばん", en: "This evening", si: "අද රාත්‍රිය", romaji: "konban" },
+            { jp: "やすみ", en: "Rest / Holiday", si: "විවේකය / නිවාඩුව", romaji: "yasumi" },
+            { jp: "ひるやすみ", en: "Lunch break", si: "දිවා භෝජන විවේකය", romaji: "hiruyasumi" },
+            { jp: "しけん", en: "Exam", si: "විභාගය", romaji: "shiken" },
+            { jp: "かいぎ", en: "Meeting", si: "රැස්වීම", romaji: "kaigi" },
+            { jp: "えいが", en: "Movie", si: "චිත්‍රපටය", romaji: "eiga" },
+            { jp: "まいあさ", en: "Every morning", si: "සෑම උදෑසනකම", romaji: "maiasa" },
+            { jp: "まいばん", en: "Every night", si: "සෑම රාත්‍රියකම", romaji: "maiban" },
+            { jp: "まいにち", en: "Every day", si: "සැමදාම", romaji: "mainichi" },
+            { jp: "げつようび", en: "Monday", si: "සඳුදා", romaji: "getsuyoubi" },
+            { jp: "かようび", en: "Tuesday", si: "අඟහරුවාදා", romaji: "kayoubi" },
+            { jp: "すいようび", en: "Wednesday", si: "බදාදා", romaji: "suiyoubi" },
+            { jp: "もくようび", en: "Thursday", si: "බ්‍රහස්පතින්දා", romaji: "mokuyoubi" },
+            { jp: "きんようび", en: "Friday", si: "සිකුරාදා", romaji: "kinyoubi" },
+            { jp: "どようび", en: "Saturday", si: "සෙනසුරාදා", romaji: "doyoubi" },
+            { jp: "にちようび", en: "Sunday", si: "ඉරිදා", romaji: "nichiyoubi" },
+            { jp: "なんようび", en: "What day of the week?", si: "සතියේ කවර දා ද?", romaji: "nanyoubi" },
+            { jp: "～から", en: "From", si: "~සිට", romaji: "kara" },
+            { jp: "～まで", en: "To / Until", si: "~දක්වා", romaji: "made" },
+            { jp: "～と～", en: "And", si: "සහ", romaji: "to" },
+            { jp: "たいへんですね", en: "That's tough, isn't it?", si: "හරි අමාරුයි නේද?", romaji: "taihen desu ne" },
+            { jp: "ばんごう", en: "Number", si: "නොම්මරය / අංකය", romaji: "bangou" },
+            { jp: "なんばん", en: "What number?", si: "කීවෙනි අංකයද?", romaji: "nanban" },
+            { jp: "そちら", en: "Your place / You", si: "ඔබ / ඔතන", romaji: "sochira" },
+            { jp: "ニューヨーク", en: "New York", si: "නිව්යෝර්ක්", romaji: "nyūyōku" },
+            { jp: "ペキン", en: "Beijing", si: "බීජිං", romaji: "pekin" },
+            { jp: "ロサンゼルス", en: "Los Angeles", si: "ලොස් ඇන්ජලීස්", romaji: "rosanjerusu" },
+            { jp: "ロンドン", en: "London", si: "ලන්ඩනය", romaji: "rondon" },
+            { jp: "あすか", en: "Asuka", si: "අසුකා", romaji: "asuka" },
+            { jp: "アップルぎんこう", en: "Apple Bank", si: "ඇපල් බැංකුව", romaji: "appuru ginkou" },
+            { jp: "みどりとしょかん", en: "Midori Library", si: "මිදොරි පුස්තකාලය", romaji: "midori toshokan" },
+            { jp: "やまとびじゅつかん", en: "Yamato Art Museum", si: "යමතෝ කලා කෞතුකාගාරය", romaji: "yamato bijutsukan" }
         ];
 
         // UI Elements
@@ -683,6 +754,7 @@
 
                 btn.innerHTML = `
                     <span class="text-2xl group-hover:text-primary transition-colors">${opt.jp}</span>
+                    <span class="text-sm font-bold text-gray-400 group-hover:text-primary/60 italic">${opt.romaji}</span>
                 `;
 
                 btn.onclick = () => handleQuizAnswer(btn, opt, correct);
@@ -716,7 +788,7 @@
                         particleCount: 100,
                         spread: 70,
                         origin: { y: 0.6 },
-                        colors: ['#ee2b3b', '#ffffff', '#ffd7e6'] // Brand colors
+                        colors: ['#3B82F6', '#ffffff', '#eff6ff'] // Brand colors
                     });
                 }
             } else {
@@ -739,61 +811,63 @@
                 // Highlight Correct
                 Array.from(quizOptionsGrid.children).forEach(b => {
                     if (b.getAttribute('data-word') === correct.jp) {
-                        b.classList.remove('bg-white', 'text-brand-dark', 'border-brand-subtle', 'border-b-4');
-                        b.classList.add('bg-green-500', 'border-green-600', 'border-b-4', 'text-white');
-                        const spans = b.querySelectorAll('span');
-                        spans.forEach(s => s.classList.remove('text-gray-400', 'text-brand-dark'));
-                        spans.forEach(s => s.classList.add('text-white'));
+                        b.classList.remove('border-brand-subtle');
+                        b.classList.add('border-green-500', 'bg-green-50');
                     }
                 });
             }
 
-            // Wait before next
+            // Next Question
             setTimeout(() => {
-                if (lives > 0) {
-                    currentIndex++;
-                    loadQuizQuestion();
-                } else {
-                    showResults(); // Game Over
-                }
+                currentIndex++;
+                loadQuizQuestion();
             }, 1200);
         }
 
         function showResults() {
+            clearInterval(timerInterval);
             practiceArea.classList.add('hidden');
-            quizArea.classList.add('hidden'); // Also hide quiz area if present
+            quizArea.classList.add('hidden');
             resultsPanel.classList.remove('hidden');
             resultsPanel.classList.add('flex');
 
-            // Custom Header based on mode
-            const header = resultsPanel.querySelector('h2');
-            if (isQuizMode) {
-                if (lives <= 0) {
-                    header.innerText = `Game Over! Score: ${quizScore} 💔`;
-                } else {
-                    header.innerText = `Quiz Complete! Score: ${quizScore}/${shuffledWords.length} 🎉`;
-                }
-            } else {
-                header.innerText = "Practice Complete! 🎉";
-            }
-
-            resultsList.innerHTML = ''; // Clear previous results
+            resultsList.innerHTML = '';
             shuffledWords.forEach(word => {
-                const card = document.createElement('div');
-                card.className = "bg-white p-4 rounded-xl border border-brand-subtle shadow-sm flex flex-col items-center gap-1";
-                card.innerHTML = `
-                    <span class="text-3xl font-black text-primary mb-1">${word.jp}</span>
-                    <span class="text-xs font-bold text-primary/40 italic mb-1">${word.romaji}</span>
-                    <span class="text-sm font-bold text-brand-dark">${word.en}</span>
-                    <span class="text-xs text-muted-indigo">${word.si}</span>
+                const div = document.createElement('div');
+                div.className = "bg-white p-4 rounded-xl border border-brand-subtle flex flex-col items-center gap-1 shadow-sm";
+                div.innerHTML = `
+                    <span class="text-2xl font-black text-brand-dark">${word.jp}</span>
+                    <span class="text-xs font-bold text-primary italic mb-1">${word.romaji}</span>
+                    <div class="flex flex-col items-center">
+                        <span class="text-sm font-bold text-muted-indigo">${word.en}</span>
+                        <span class="text-xs text-muted-indigo/60">${word.si}</span>
+                    </div>
                 `;
-                resultsList.appendChild(card);
+                resultsList.appendChild(div);
             });
+
+            if (isQuizMode) {
+                const scoreDisplay = document.createElement('div');
+                scoreDisplay.className = "w-full text-center py-6 bg-brand-subtle/30 rounded-2xl mb-4";
+                scoreDisplay.innerHTML = `
+                    <p class="text-sm font-bold text-muted-indigo uppercase tracking-widest mb-1">Final Score</p>
+                    <h3 class="text-4xl font-black text-primary">${quizScore} <span class="text-xl text-muted-indigo">/ ${shuffledWords.length}</span></h3>
+                `;
+                resultsPanel.insertBefore(scoreDisplay, resultsList);
+
+                // Confetti for good score
+                if (quizScore / shuffledWords.length > 0.7) {
+                    confetti({
+                        particleCount: 150,
+                        spread: 100,
+                        origin: { y: 0.6 }
+                    });
+                }
+            }
         }
 
         // Initialize
         initGrid();
-
     </script>
 </body>
 
